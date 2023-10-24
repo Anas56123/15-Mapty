@@ -23,6 +23,7 @@ const getCountryData = function (country) {
         +data.population / 1000000
       ).toFixed(1)}M people</p>
       <p class="country__row"><span>🗣️</span>${data.languages[0].name}</p>
+      <p class="country__row"><span>🏦</span>${data.capital}</p>
       <p class="country__row"><span>💰</span>${data.currencies[0].name}</p>
     </div>
   </article>
@@ -32,6 +33,6 @@ const getCountryData = function (country) {
   });
 };
 
-getCountryData('tunisia');
+getCountryData('algeria');
 // Don't use "https://restcountries.eu/rest/v2/"
 // The Real link is "https://countries-api-836d.onrender.com/countries
